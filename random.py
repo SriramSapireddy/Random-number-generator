@@ -1,17 +1,17 @@
 import random
-def random(num, start = 1, end = 500): 
-    a = [] 
-    x = random.randint(start, end) 
+def Random(num, start = 1, end = 500): 
+    arr = [] 
+    tmp = random.randint(start, end) 
       
     for x in range(num): 
           
-        while x in a: 
-            x = random.randint(start, end) 
+        while tmp in arr: 
+            tmp = random.randint(start, end) 
               
-        a.append(x) 
+        arr.append(tmp) 
           
-    a.sort() 
+    arr.sort() 
       
-    return a
+    return arr
 
-print(random(10))
+print(Random(10))
